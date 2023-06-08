@@ -1,4 +1,85 @@
 @import './reset.css';
 
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/noto-sans-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/outfit-700.woff2') format('woff2');
+}
+
+:root {
+  --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-family-base: 'Noto Sans', var(--font-family-system);
+  --font-family-alt: 'Outfit', var(--font-family-system);
+
+  --color-white: #ffffff;
+}
+
 body {
+  font-family: var(--font-family-base);
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-alt);
+}
+
+.section__hero {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #5a6889;
+}
+
+.section__hero__title {
+  font-weight: 700;
+  font-size: 6rem;
+  color: var(--color-white);
+}
+
+.section__hero__names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-variant: all-small-caps;
+  font-size: 2.25rem;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.section__hero__name {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.section__hero__name:before {
+  content: '';
+  width: 112px;
+  height: 1px;
+  background-color: var(--color-white);
+  margin-right: 1rem;
+  margin-top: 10px;
 }
