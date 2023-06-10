@@ -32,6 +32,8 @@
   --font-family-alt: 'Outfit', var(--font-family-system);
 
   --color-white: #ffffff;
+
+  --col-width: 95px;
 }
 
 body {
@@ -46,17 +48,34 @@ h4 {
   font-family: var(--font-family-alt);
 }
 
+.container {
+  width: 100%;
+  max-width: calc(var(--col-width) * 12);
+  margin: 0 auto;
+}
+
 .section__hero {
   width: 100%;
   height: 100vh;
   height: 100dvh;
   background-color: #5a6889;
+  position: relative;
+}
+
+.section__hero__main {
+  padding-top: 12rem;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: calc(var(--col-width) * 8);
 }
 
 .section__hero__title {
   font-weight: 700;
   font-size: 6rem;
   color: var(--color-white);
+  padding-top: 2rem;
+  padding-left: calc(var(--col-width) * 1);
 }
 
 .section__hero__names {
@@ -67,6 +86,8 @@ h4 {
   font-size: 2.25rem;
   color: var(--color-white);
   font-weight: 300;
+  margin-top: 1.5rem;
+  padding-left: calc(var(--col-width) * 2);
 }
 
 .section__hero__name {
@@ -82,4 +103,51 @@ h4 {
   background-color: var(--color-white);
   margin-right: 1rem;
   margin-top: 10px;
+}
+
+.section__hero__blob {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-width: 428px;
+}
+
+.section__hero__image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  z-index: 0;
+}
+
+.section__hero__blur {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: linear-gradient(
+    50.27deg,
+    rgba(255, 255, 255, 0.4) 22.42%,
+    rgba(255, 255, 255, 0.15) 96.98%
+  );
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.section__hero__noise {
+  background-image: url('../images/noise.svg');
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-blend-mode: overlay;
 }
