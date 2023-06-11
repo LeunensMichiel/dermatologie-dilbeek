@@ -32,6 +32,9 @@
   --font-family-alt: 'Outfit', var(--font-family-system);
 
   --color-white: #ffffff;
+  --color-text: #adbebc;
+  --color-accent: #1e4040;
+  --color-accent--light: #e6f5e0;
 
   --col-width: 95px;
 }
@@ -46,6 +49,19 @@ h2,
 h3,
 h4 {
   font-family: var(--font-family-alt);
+}
+
+.title {
+  font-family: var(--font-family-alt);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-accent);
+}
+
+.icon {
+  width: 3rem;
+  height: auto;
 }
 
 .container {
@@ -133,7 +149,7 @@ h4 {
   position: absolute;
   background: linear-gradient(
     50.27deg,
-    rgba(255, 255, 255, 0.4) 22.42%,
+    rgba(255, 245, 223, 0.4) 22.42%,
     rgba(255, 255, 255, 0.15) 96.98%
   );
   backdrop-filter: blur(8px);
@@ -174,6 +190,67 @@ h4 {
 
 .section__hero__vertical-line {
   border-left: 1px solid #fff;
-  opacity: 0.8;
+  opacity: 0.5;
   height: 100%;
+}
+
+.section__intro__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 7rem;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: var(--color-text);
+}
+
+.section__intro__names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding-top: 6rem;
+  margin-bottom: 10rem;
+  position: relative;
+  overflow: visible;
+  margin-right: 5rem;
+}
+
+.section__intro__name {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-accent);
+}
+
+.section__intro__name span:nth-child(1) {
+  font-family: var(--font-family-alt);
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+.section__intro__name span:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.section__intro__ampersant {
+  font-size: 20rem;
+  color: var(--color-accent--light);
+  font-family: var(--font-family-alt);
+  font-weight: 700;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-30%, 0);
+}
+
+.section__intro__callout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
