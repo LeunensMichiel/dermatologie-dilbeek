@@ -300,9 +300,17 @@ h4 {
   background-color: transparent;
   color: var(--color-accent);
   padding: 0.5em 0;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-.card__cta-wrapper > img {
+.card__cta-wrapper:hover,
+.card__cta-wrapper:focus {
+  color: var(--color-accent--alt);
+  border-color: var(--color-accent--alt);
+}
+
+.card__cta-wrapper > svg {
   width: 1rem;
   margin-top: 4px;
   height: auto;
