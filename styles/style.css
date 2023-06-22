@@ -35,7 +35,7 @@
   --color-text: #95aeab;
   --color-accent: #1e4040;
   --color-accent--light: #e6f5e0;
-  --color-accent--alt: #be5aed;
+  --color-accent--alt: #1e4040;
 
   --col-width: 95px;
 
@@ -204,6 +204,7 @@ h4 {
   font-size: 1.5rem;
   line-height: 160%;
   color: var(--color-text);
+  text-align: center;
 }
 
 .section__intro__names {
@@ -332,7 +333,6 @@ h4 {
   justify-items: center;
   justify-content: center;
   align-items: center;
-  padding-bottom: var(--section-margin);
 }
 
 .table-header {
@@ -357,6 +357,13 @@ h4 {
   height: 1px;
   background-color: var(--color-accent--light);
   grid-column: span 3;
+}
+
+.asterix {
+  font-size: 0.75rem;
+  color: var(--color-text);
+  margin-top: 3rem;
+  padding-bottom: var(--section-margin);
 }
 
 footer {
@@ -486,6 +493,10 @@ footer {
 
   .table-divider {
     display: none;
+  }
+
+  .asterix {
+    text-align: center;
   }
 }
 
