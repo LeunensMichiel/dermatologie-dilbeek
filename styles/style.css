@@ -32,7 +32,7 @@
   --font-family-alt: 'Outfit', var(--font-family-system);
 
   --color-white: #ffffff;
-  --color-text: #adbebc;
+  --color-text: #95aeab;
   --color-accent: #1e4040;
   --color-accent--light: #e6f5e0;
   --color-accent--alt: #be5aed;
@@ -176,7 +176,7 @@ h4 {
   height: auto;
   width: 100%;
   z-index: 10;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
 
@@ -339,6 +339,7 @@ h4 {
   padding: 0.75rem 0;
   font-weight: 600;
   color: var(--color-accent);
+  text-align: center;
 }
 
 .table-item {
@@ -365,4 +366,128 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--color-accent);
+}
+
+/* PHONE VIEW */
+@media screen and (max-width: 639px) {
+  :root {
+    --col-width: calc(100% - 2rem);
+    --section-margin: 5rem;
+  }
+
+  .container {
+    max-width: var(--col-width);
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 1.5rem;
+  }
+
+  .section__hero {
+    height: 80vh;
+    height: 80dvh;
+  }
+
+  .section__hero__title {
+    font-size: 3rem;
+    padding-left: 2rem;
+  }
+
+  .section__hero__names {
+    padding-left: 3rem;
+  }
+
+  .section__hero__name {
+    font-size: 1.5rem;
+  }
+
+  .section__hero__name:before {
+    width: 40px;
+    margin-top: 8px;
+  }
+
+  .section__hero__blob {
+    max-width: 250px;
+  }
+
+  .section__hero__vertical-lines {
+    display: none;
+  }
+
+  .section__intro__names {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .section__intro__name {
+    gap: 0.75rem;
+    flex-direction: column;
+  }
+
+  .section__intro__name span:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .section__intro__name span:nth-child(2) {
+    font-size: 1.25rem;
+  }
+
+  .section__intro__ampersant {
+    font-size: 20rem;
+    font-weight: 700;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .section__intro__container {
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+    font-size: 1.125rem;
+    line-height: 150%;
+  }
+
+  .section__cards {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .section__table__header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section__table {
+  }
+
+  .table {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .table-header {
+    padding: 1rem 0;
+  }
+
+  .table-header:first-of-type {
+    display: none;
+  }
+
+  .table-item__first-text {
+    text-align: center;
+    width: 100%;
+    grid-column: span 2;
+    padding: 0.5rem;
+    background-color: var(--color-accent--light);
+    color: var(--color-accent);
+  }
+
+  .table-divider {
+    display: none;
+  }
 }
