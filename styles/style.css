@@ -344,6 +344,14 @@ h4 {
 
 .table-item {
   line-height: 1;
+  position: relative;
+}
+
+.table-item > sup {
+  display: block;
+  position: absolute;
+  right: -6px;
+  top: -6px;
 }
 
 .table-item__first-text {
@@ -480,6 +488,12 @@ footer {
 
   .table-header:first-of-type {
     display: none;
+  }
+
+  .table-item > sup {
+    right: -4px;
+    top: -4px;
+    font-size: 10px;
   }
 
   .table-item__first-text {
