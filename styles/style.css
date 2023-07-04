@@ -74,14 +74,13 @@ h4 {
 
 .section__hero {
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
+  height: 94vh;
   background-color: #5a6889;
   position: relative;
 }
 
 .section__hero__main {
-  padding-top: 12rem;
+  padding-top: 16vh;
   position: relative;
   z-index: 5;
   width: 100%;
@@ -171,6 +170,15 @@ h4 {
   opacity: 0.2;
 }
 
+.section__hero__chevron {
+  position: absolute;
+  z-index: 11;
+  bottom: 12vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: jumpInfinite 5s infinite both;
+}
+
 .section__hero__divider {
   position: absolute;
   height: auto;
@@ -178,22 +186,6 @@ h4 {
   z-index: 10;
   bottom: -1px;
   left: 0;
-}
-
-.section__hero__vertical-lines {
-  position: absolute;
-  height: 100%;
-  right: 10%;
-  top: 0;
-  z-index: 9;
-  display: flex;
-  gap: 2rem;
-}
-
-.section__hero__vertical-line {
-  border-left: 1px solid #fff;
-  opacity: 0.5;
-  height: 100%;
 }
 
 .section__intro__container {
@@ -408,7 +400,6 @@ footer {
 
   .section__hero {
     height: 80vh;
-    height: 80dvh;
   }
 
   .section__hero__title {
@@ -428,8 +419,9 @@ footer {
     max-width: 250px;
   }
 
-  .section__hero__vertical-lines {
-    display: none;
+  .section__hero__chevron {
+    bottom: 5rem;
+    width: 2rem;
   }
 
   .section__intro__names {
@@ -539,5 +531,20 @@ footer {
 
   .card__title {
     font-size: 1.5rem;
+  }
+}
+
+@keyframes jumpInfinite {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-20px);
+  }
+  66% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
