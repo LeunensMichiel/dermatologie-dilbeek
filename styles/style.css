@@ -375,6 +375,63 @@ footer {
   color: var(--color-accent);
 }
 
+.notification {
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  width: 100%;
+  max-width: 575px;
+  z-index: 1000;
+  color: var(--color-accent);
+  background-color: var(--color-accent--light);
+  padding: 1.5rem 1.5rem;
+  line-height: 120%;
+  font-size: 0.875rem;
+  border-radius: 2px;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.15s ease-out;
+}
+
+.notification--hidden {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+#notification-close {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+  margin-right: -1rem;
+  margin-top: -1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transform: translateY(0);
+}
+
+#notification-close:active {
+  transform: translateY(1px);
+}
+
+.notification__icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.notification__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notification__title {
+  font-weight: 700;
+}
+
 /* PHONE VIEW */
 @media screen and (max-width: 767px) {
   :root {
@@ -503,6 +560,13 @@ footer {
 
   .asterix {
     text-align: center;
+  }
+
+  .notification {
+    bottom: 0.875rem;
+    left: 0.875rem;
+    max-width: calc(100% - 1.75rem);
+    padding: 1rem;
   }
 }
 
