@@ -47,24 +47,28 @@
           <div class="section__hero__names">
             <span class="section__hero__name">Dr. Annelies Reynaers</span>
             <span class="section__hero__name">Dr. Sara Nguyen</span>
+            <span class="section__hero__name">Dr. Laura De Brucker</span>
           </div>
         </div>
       </div>
       <img
         class="icon section__hero__chevron"
         src="./images/icon-chevron--no-bg.svg"
+        id="scroll_down"
+        onclick=""
       />
       <img class="section__hero__divider" src="./images/hero__divider.svg" />
     </section>
     <section class="container">
       <div class="section__intro__names">
         <div class="section__intro__name">
-          <span>dr. Reynaers</span>
           <span>Dilbeek Park</span>
+          <span>dr. Reynaers</span>
         </div>
         <div class="section__intro__name">
-          <span>dr. Nguyen</span>
           <span>Dermahuis</span>
+          <span>dr. Nguyen</span>
+          <span>dr. De Brucker</span>
         </div>
         <div class="section__intro__ampersant">&</div>
       </div>
@@ -88,7 +92,7 @@
         <img class="icon" src="./images/icon-chevron.svg" />
       </div>
     </section>
-    <section>
+    <section id="section_cards">
       <div class="section__cards container">
         <div class="card">
           <img
@@ -198,16 +202,72 @@
             <span class="card__cta">maak een afspraak</span>
           </a>
         </div>
+        <div class="card">
+          <img
+            src="./images/laura.jpeg"
+            alt="Foto van dermatoloog dr. Sara Nguyen in haar praktijk te Dilbeek."
+            class="card__photo"
+          />
+          <div class="title card__title">Dr. Laura De Brucker</div>
+          <a
+            href="https://dermahuis.be/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="card__cta-wrapper"
+          >
+            <svg
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_16_77)">
+                <path
+                  d="M12 10.1428L14 8.14282L12 6.14282"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 8.14282H14"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 6.14282V10.1428"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_16_77">
+                  <rect
+                    width="16"
+                    height="16"
+                    fill="white"
+                    transform="translate(0 0.142822)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="card__cta">maak een afspraak</span>
+          </a>
+        </div>
       </div>
     </section>
     <section class="container section__table">
       <h2 class="section__table__header title">Algemene Dermatologie</h2>
       <div class="table">
         <p class="table-header"></p>
-        <p class="table-header">dr. Annelies Reynaers</p>
-        <p class="table-header">dr. Sara Nguyen</p>
+        <p class="table-header">dr. Reynaers</p>
+        <p class="table-header">dr. Nguyen</p>
+        <p class="table-header">dr. De Brucker</p>
 
         <p class="table-item table-item__first-text">Huid-en haarziekten</p>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <div class="table-divider"></div>
@@ -215,30 +275,44 @@
         <p class="table-item table-item__first-text">Dermatochirurgie</p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <div class="table-divider"></div>
+
+        <p class="table-item table-item__first-text">MOHS heelkunde</p>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <p class="table-item">
+          <img src="./images/icon-check.svg" /><sup>*</sup>
+        </p>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">PUVA/UVB lichaam</p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">PUVA handen & voeten</p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">Contactallergie-testen</p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">Priktesten</p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">Fotodynamische therapie</p>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <div class="table-divider"></div>
 
@@ -247,6 +321,7 @@
         </p>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">
@@ -254,12 +329,14 @@
         </p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">
           Laserbehandeling voor couperose
         </p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <p class="table-item">
           <img src="./images/icon-check.svg" /><sup>*</sup>
         </p>
@@ -269,6 +346,7 @@
           Laserbehandeling voor spidernaevi
         </p>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <p class="table-item">
           <img src="./images/icon-check.svg" /><sup>*</sup>
         </p>
@@ -279,38 +357,29 @@
       <h2 class="section__table__header title">Esthetische Dermatologie</h2>
       <div class="table">
         <p class="table-header"></p>
-        <p class="table-header">dr. Annelies Reynaers</p>
-        <p class="table-header">dr. Sara Nguyen</p>
+        <p class="table-header">dr. Reynaers</p>
+        <p class="table-header">dr. Nguyen</p>
+        <p class="table-header">dr. De Brucker</p>
 
         <p class="table-item table-item__first-text">
           Rimpelbehandeling met botuline toxine
         </p>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">Skinbooster</p>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
         <div class="table-divider"></div>
 
         <p class="table-item table-item__first-text">Microneedling</p>
         <span class="table-item"><img src="./images/icon-minus.svg" /></span>
         <span class="table-item"><img src="./images/icon-check.svg" /></span>
-        <div class="table-divider"></div>
-
-        <p class="table-item table-item__first-text">
-          Gefractioneerde CO2-laser
-        </p>
-        <span class="table-item"><img src="./images/icon-minus.svg" /></span>
-        <p class="table-item">
-          <img src="./images/icon-check.svg" /><sup>*</sup>
-        </p>
-        <div class="table-divider"></div>
+        <span class="table-item"><img src="./images/icon-check.svg" /></span>
       </div>
-      <p class="asterix">
-        Behandelingen met <sup>*</sup> vinden plaats in het UZ Brussel
-      </p>
     </section>
     <footer><small>© Dermatologie Dilbeek</small></footer>
     <div class="notification notification--hidden">

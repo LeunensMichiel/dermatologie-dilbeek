@@ -1,5 +1,7 @@
 const notification = document.querySelector('.notification');
 const notificationButton = document.querySelector('#notification-close');
+const scrollDownChevron = document.querySelector('#scroll_down');
+const cardsSection = document.querySelector('#section_cards');
 
 notificationButton.addEventListener('click', () => {
   setTimeout(function () {
@@ -23,3 +25,9 @@ window.onscroll = () => {
     }, 500);
   }
 };
+
+scrollDownChevron.addEventListener('click', () => {
+  cardsSection.scrollIntoView({
+    behavior: 'smooth',
+  });
+});
