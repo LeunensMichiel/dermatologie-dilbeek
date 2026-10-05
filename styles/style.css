@@ -435,6 +435,24 @@ footer {
   font-weight: 700;
 }
 
+.notification__link {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: 0.25rem;
+  padding-bottom: 0.125rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.notification__link:hover,
+.notification__link:focus {
+  border-bottom-color: transparent;
+}
+
 /* PHONE VIEW */
 @media screen and (max-width: 767px) {
   :root {
